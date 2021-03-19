@@ -1,0 +1,45 @@
+.expert {
+  height: fit-content;
+  border: 1px solid black;
+  display: flex;
+}
+
+.expert_info {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
+.expert_photo {
+  width: 80px;
+  height: 80px;
+}
+
+.expert_bio {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+
+.expert_detail {
+  display: flex;
+  justify-content: space-between;
+}
+
+.expert_name_about {
+  display: flex;
+  flex-direction: column;
+}
+
+.expert_description {
+  display: flex;
+  flex-direction: column;
+}
+
+.expert_availability {
+  display: flex;
+}
+
+.expert_skills {
+  display: flex;
+}
