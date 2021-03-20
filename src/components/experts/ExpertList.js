@@ -6,7 +6,7 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faChevronDown} from '@fortawesome/free-solid-svg-icons'
 
 function ExpertList() {
-    const {state, dispatch} = useContext(userContext)
+    const {state} = useContext(userContext)
     return (
         <div className='expertlist'>
             <p className='match'>

@@ -8,11 +8,11 @@ import {faTimes} from '@fortawesome/free-solid-svg-icons'
 function Expertise() {
     const [query, setQuery] = useState('')
     const [expertise, setExpertise] = useState([])
-    const {state, dispatch} = useContext(userContext)
+    const {dispatch} = useContext(userContext)
 
 
     const handleSubmit = (e) => {
-        if(e.key == 'Enter' && query !== '') {
+        if(e.key === 'Enter' && query !== '') {
             setExpertise(prevState => {
                 prevState =  prevState.concat(query)
                 dispatch({type: 'DELETE_EXPERTISE', payload: query})

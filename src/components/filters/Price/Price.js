@@ -5,8 +5,9 @@ import './Price.css'
 function Price(props) {
     const {price} = props
     const [sortPrice, setSortPrice] = useState([])
-    const {state, dispatch} = useContext(userContext)
+    const {dispatch} = useContext(userContext)
 
+    console.log(sortPrice)
     const handleChange = (e, data) => {
         if(e.target.checked) {
             setSortPrice(prevState => {

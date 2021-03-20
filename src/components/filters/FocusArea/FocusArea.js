@@ -1,4 +1,4 @@
-import React, {useState, useContext} from 'react'
+import React, {useState} from 'react'
 import '../Expertise/Expertise.css'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faTimes} from '@fortawesome/free-solid-svg-icons'
@@ -10,7 +10,7 @@ function FocusArea() {
 
 
     const handleSubmit = (e) => {
-        if(e.key == 'Enter' && query !== '') {
+        if(e.key === 'Enter' && query !== '') {
             setFocus(prevState => {
                 prevState =  prevState.concat(query)
                 return prevState

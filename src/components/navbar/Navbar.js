@@ -11,15 +11,15 @@ function Navbar() {
                 <h3 className='logo'>Logo</h3>
             </div>
             <div className='links'>
-                <a className='link'>Dashboard</a>
-                <a className='link'>Find Experts</a>
-                <a className='link'>Discussion</a>
+                <a className='link' href='#'>Dashboard</a>
+                <a className='link' href='#'>Find Experts</a>
+                <a className='link' href='#'>Discussion</a>
             </div>
             <div className='userinfo'>
                 <FontAwesomeIcon icon={faBell} className='icon'/>
                 <FontAwesomeIcon icon={faCommentAlt} className='icon'/>
                 <div >
-                    <img className='icon_image' src='https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=750&q=80'/>
+                    <img className='icon_image' src='https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=750&q=80' alt=''/>
                     <FontAwesomeIcon icon={faChevronDown} className='icon'/>
                 </div>
             </div>

@@ -7,8 +7,9 @@ import { userContext } from '../../App'
 function Rating(props) {
     const {rating} = props
     const [sortRating, setSortRating] = useState([])
-    const {state, dispatch} = useContext(userContext)
+    const {dispatch} = useContext(userContext)
 
+    console.log(sortRating)
     const handleChange = (e, data) => {
         if(e.target.checked) {
             setSortRating(prevState => {

@@ -5,8 +5,9 @@ import './Languages.css'
 function Languages(props) {
     const {languages} = props
     const [sortLanguage, setSortLanguage] = useState([])
-    const {state, dispatch} = useContext(userContext)
+    const {dispatch} = useContext(userContext)
 
+    console.log(sortLanguage)
     const handleChange = (e, data) => {
         if(e.target.checked) {
             setSortLanguage(prevState => {
