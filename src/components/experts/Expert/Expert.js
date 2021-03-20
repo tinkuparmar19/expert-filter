@@ -24,7 +24,7 @@ function Expert(props) {
                     </div>
                     <div className='view_profile'>
                         <FontAwesomeIcon icon={faHeart} className='icon'/>
-                        <a className='profile'>view profile</a>
+                        <p className='profile'>view profile</p>
                     </div>
                 </div>
                 <div className='expert_description'>

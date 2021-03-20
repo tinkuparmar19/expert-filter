@@ -11,9 +11,9 @@ function Navbar() {
                 <h3 className='logo'>Logo</h3>
             </div>
             <div className='links'>
-                <a className='link' href='#'>Dashboard</a>
-                <a className='link' href='#'>Find Experts</a>
-                <a className='link' href='#'>Discussion</a>
+                <p className='link'>Dashboard</p>
+                <p className='link'>Find Experts</p>
+                <p className='link'>Discussion</p>
             </div>
             <div className='userinfo'>
                 <FontAwesomeIcon icon={faBell} className='icon'/>
