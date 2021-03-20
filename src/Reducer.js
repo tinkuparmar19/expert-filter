@@ -14,13 +14,13 @@ export const reducer = (state=initialState, action) => {
             return state.filter(data => data.rating >= action.payload)
 
         case 'ADD_RATING':
-            if(action.payload == 0)
+            if(action.payload === 0)
                 return initialState
             else 
                 return initialState.filter(data => data.rating >= action.payload)
 
         case 'DELETE_PRICE':
-            return state.filter(data => data.price == action.payload)
+            return state.filter(data => data.price === action.payload)
             
         case 'ADD_PRICE':
             return initialState.filter(data => action.payload.includes(data.price))
