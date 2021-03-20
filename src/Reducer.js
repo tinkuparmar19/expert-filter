@@ -23,7 +23,10 @@ export const reducer = (state=initialState, action) => {
             return state.filter(data => data.price === action.payload)
             
         case 'ADD_PRICE':
-            return initialState.filter(data => action.payload.includes(data.price))
+            if(action.payload.length === 0)
+                return initialState
+            else 
+                return initialState.filter(data => action.payload.includes(data.price))
         
         case 'DELETE_LANGUAGE':
             return state.filter(data => data.info[2].includes(action.payload))
