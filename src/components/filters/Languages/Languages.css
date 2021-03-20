@@ -1,0 +1,13 @@
+.language {
+  margin: 30px;
+}
+
+.language_list {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+}
+
+.language_label {
+  margin-bottom: 5px;
+}

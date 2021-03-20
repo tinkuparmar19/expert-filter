@@ -1,0 +1,58 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #faece3;
+}
+
+.logo_container {
+  margin: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.beforelogo {
+  width: 15px;
+  height: 15px;
+  background-color: turquoise;
+  border-radius: 50%;
+}
+
+.logo {
+  font-weight: 300;
+  margin-left: 5px;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.link {
+  margin: 0 20px;
+  cursor: pointer;
+}
+
+.link:hover {
+  border-bottom: 2px solid #eb762d;
+}
+
+.userinfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon {
+  width: 25px;
+  height: 25px;
+  margin: 0 15px;
+  cursor: pointer;
+}
+
+.icon_image {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}

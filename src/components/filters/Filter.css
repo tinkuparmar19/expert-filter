@@ -1,5 +1,16 @@
 .filter {
+  width: 25%;
+}
+
+.filterlist {
   display: flex;
   flex-direction: column;
-  width: 25%;
+  background-color: white;
+  border: 0.5px solid gainsboro;
+  margin: 0px 5px;
+  border-radius: 1%;
+}
+
+.filter_header {
+  margin: 42px 3px;
 }

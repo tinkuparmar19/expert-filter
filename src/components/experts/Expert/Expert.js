@@ -1,5 +1,7 @@
 import React from 'react'
 import './Expert.css'
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import {faStar, faHeart, faStopwatch, faMapMarkedAlt, faLanguage} from '@fortawesome/free-solid-svg-icons'
 
 function Expert(props) {
     const data = props.data
@@ -7,33 +9,37 @@ function Expert(props) {
         <div className='expert'>
             <div className='expert_info'>
                 <img src={data.photo} className='expert_photo' alt='man'/>
-                <p>Price: {data.price}</p>
-                <p>{data.rating} ({data.reviews})</p>
+                <span>Price: <span className='price_color'>{data.price}</span></span>
+                <span className='review'>
+                    <FontAwesomeIcon icon={faStar} className='icon'/>
+                    <span className='rating'>{data.rating}</span> 
+                    <span>({data.reviews})</span>
+                </span>
             </div>
             <div className='expert_bio'>
                 <div className='expert_detail'>
                     <div className='expert_name_about'>
                         <h3>{data.name}</h3>
-                        <p>{data.about}</p>
+                        <span>{data.about}</span>
                     </div>
                     <div className='view_profile'>
-                        <i>icon</i>
-                        <i>view profile</i>
+                        <FontAwesomeIcon icon={faHeart} className='icon'/>
+                        <a className='profile'>view profile</a>
                     </div>
                 </div>
-                <hr />
                 <div className='expert_description'>
                     <div className='expert_availability'>
-                        <p>{data.info[0]}</p>
-                        <p>{data.info[1]}</p>
-                        <p>{data.info[2]}</p>
+                       <p className='available'><FontAwesomeIcon icon={faStopwatch} className='icon'/> <span>{data.info[0]}</span></p>
+                       <p className='available'><FontAwesomeIcon icon={faMapMarkedAlt} className='icon'/> <span>{data.info[1]}</span></p>
+                       <p className='available'><FontAwesomeIcon icon={faLanguage} className='icon'/> <span>{data.info[2]}</span></p>
                     </div>
-                    <p>{data.description}</p> 
+                    <p className='description'>{data.description}</p> 
                     <div className='expert_skills'>
-                        <p>{data.skills[0]}</p>
-                        <p>{data.skills[1]}</p>
-                        <p>{data.skills[2]}</p>
-                        <p>{data.skills[3]}</p>
+                        {
+                            data.skills.map(skill => {
+                                return <p className='skill'>{skill}</p>
+                            })
+                        }
                     </div>
                 </div>
             </div>

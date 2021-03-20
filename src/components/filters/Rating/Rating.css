@@ -1,0 +1,24 @@
+.filter_rating {
+  margin: 30px;
+}
+
+.rating_checkbox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.start_list_container {
+  display: flex;
+  align-items: center;
+}
+
+.star_list {
+  display: flex;
+}
+
+.star_icon {
+  width: 12px;
+  height: 12px;
+  color: #eb762d;
+}

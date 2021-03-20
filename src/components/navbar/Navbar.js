@@ -1,22 +1,27 @@
 import React from 'react'
+import './Navbar.css'
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import {faBell, faCommentAlt, faChevronDown} from '@fortawesome/free-solid-svg-icons'
 
 function Navbar() {
     return (
-        <div>
-            <div>
-                <h3>Logo</h3>
+        <div className='navbar'>
+            <div className='logo_container'>
+                <p className='beforelogo'></p>
+                <h3 className='logo'>Logo</h3>
             </div>
-            <div>
-                <ul>
-                    <li><a>Dashboard</a></li>
-                    <li><a>Find Experts</a></li>
-                    <li><a>Discussion</a></li>
-                </ul>
+            <div className='links'>
+                <a className='link'>Dashboard</a>
+                <a className='link'>Find Experts</a>
+                <a className='link'>Discussion</a>
             </div>
-            <div>
-                <p>notification</p>
-                <p>chat</p>
-                <p>info</p>
+            <div className='userinfo'>
+                <FontAwesomeIcon icon={faBell} className='icon'/>
+                <FontAwesomeIcon icon={faCommentAlt} className='icon'/>
+                <div >
+                    <img className='icon_image' src='https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=750&q=80'/>
+                    <FontAwesomeIcon icon={faChevronDown} className='icon'/>
+                </div>
             </div>
         </div>
     )
