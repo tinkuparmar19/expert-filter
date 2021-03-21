@@ -1,20 +1,20 @@
+.rating_checkbox,
+.star_list,
+.start_list_container {
+  display: flex;
+}
+
 .filter_rating {
   margin: 30px;
 }
 
 .rating_checkbox {
-  display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
 .start_list_container {
-  display: flex;
   align-items: center;
-}
-
-.star_list {
-  display: flex;
 }
 
 .star_icon {

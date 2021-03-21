@@ -1,14 +1,26 @@
+.expert,
+.expert_info,
+.review,
+.expert_bio,
+.expert_detail,
+.view_profile,
+.expert_name_about,
+.expert_description,
+.expert_availability,
+.available,
+.expert_skills {
+  display: flex;
+}
+
 .expert {
   height: fit-content;
   border: 0.5px solid gainsboro;
-  display: flex;
   background-color: white;
   margin: 5px 5px 10px;
   border-radius: 1%;
 }
 
 .expert_info {
-  display: flex;
   flex-direction: column;
   align-items: center;
   width: 20%;
@@ -27,7 +39,6 @@
 }
 
 .review {
-  display: flex;
   align-items: center;
   justify-content: flex-start;
   margin-top: 10px;
@@ -45,20 +56,17 @@
 }
 
 .expert_bio {
-  display: flex;
   flex-direction: column;
   width: 70%;
 }
 
 .expert_detail {
-  display: flex;
   justify-content: space-between;
   padding-bottom: 20px;
   border-bottom: 0.5px solid gainsboro;
 }
 
 .view_profile {
-  display: flex;
   align-items: center;
 }
 
@@ -71,17 +79,14 @@
 }
 
 .expert_name_about {
-  display: flex;
   flex-direction: column;
 }
 
 .expert_description {
-  display: flex;
   flex-direction: column;
 }
 
 .expert_availability {
-  display: flex;
   font-size: 14px;
   font-weight: 100;
 }
@@ -92,12 +97,7 @@
 }
 
 .available {
-  display: flex;
   align-items: center;
-}
-
-.expert_skills {
-  display: flex;
 }
 
 .skill {

@@ -1,11 +1,14 @@
-.app {
+.app,
+.container {
   display: flex;
+}
+
+.app {
   flex-direction: column;
   background-color: #f2f5f3;
 }
 
 .container {
-  display: flex;
   margin: 20px;
   justify-content: center;
 }
